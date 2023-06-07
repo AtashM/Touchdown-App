@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		74F6DFAB2A30F0E10026A308 /* PlayerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6DFAA2A30F0E10026A308 /* PlayerModel.swift */; };
+		74F6DFAE2A30F1870026A308 /* CodableBundleExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6DFAD2A30F1870026A308 /* CodableBundleExtension.swift */; };
+		74F6DFB02A30F3E80026A308 /* FeaturedItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6DFAF2A30F3E80026A308 /* FeaturedItemView.swift */; };
+		74F6DFB22A30F4EC0026A308 /* FeaturedTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74F6DFB12A30F4EC0026A308 /* FeaturedTabView.swift */; };
 		BD0F54B02A30757500478D3A /* TouchdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F54AF2A30757500478D3A /* TouchdownApp.swift */; };
 		BD0F54B22A30757500478D3A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD0F54B12A30757500478D3A /* ContentView.swift */; };
 		BD0F54B42A30757800478D3A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD0F54B32A30757800478D3A /* Assets.xcassets */; };
@@ -22,6 +26,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		74F6DFAA2A30F0E10026A308 /* PlayerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerModel.swift; sourceTree = "<group>"; };
+		74F6DFAD2A30F1870026A308 /* CodableBundleExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableBundleExtension.swift; sourceTree = "<group>"; };
+		74F6DFAF2A30F3E80026A308 /* FeaturedItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedItemView.swift; sourceTree = "<group>"; };
+		74F6DFB12A30F4EC0026A308 /* FeaturedTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedTabView.swift; sourceTree = "<group>"; };
 		BD0F54AC2A30757500478D3A /* Touchdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Touchdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD0F54AF2A30757500478D3A /* TouchdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchdownApp.swift; sourceTree = "<group>"; };
 		BD0F54B12A30757500478D3A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +57,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74F6DFA92A30F0BC0026A308 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				74F6DFAA2A30F0E10026A308 /* PlayerModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74F6DFAC2A30F1620026A308 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				74F6DFAD2A30F1870026A308 /* CodableBundleExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		BD0F54A32A30757500478D3A = {
 			isa = PBXGroup;
 			children = (
@@ -68,13 +92,13 @@
 		BD0F54AE2A30757500478D3A /* Touchdown */ = {
 			isa = PBXGroup;
 			children = (
+				74F6DFAC2A30F1620026A308 /* Extension */,
 				BD0F54C72A30791C00478D3A /* App */,
 				BD0F54C82A30793700478D3A /* View */,
-				BD0F54CB2A30796300478D3A /* Model */,
-				BD0F54CC2A30796C00478D3A /* Extension */,
+				74F6DFA92A30F0BC0026A308 /* Model */,
+				BD0F54C52A30768100478D3A /* Data */,
 				BD0F54CD2A30797900478D3A /* Utility */,
 				BD0F54C62A3076E400478D3A /* Info.plist */,
-				BD0F54C52A30768100478D3A /* Data */,
 				BD0F54B32A30757800478D3A /* Assets.xcassets */,
 				BD0F54B52A30757800478D3A /* Preview Content */,
 			);
@@ -131,22 +155,10 @@
 				BD0F54D02A307A9600478D3A /* FooterView.swift */,
 				BD0F54D32A30A99800478D3A /* NavigationBarView.swift */,
 				BD0F54D52A30AB3400478D3A /* LogoView.swift */,
+				74F6DFAF2A30F3E80026A308 /* FeaturedItemView.swift */,
+				74F6DFB12A30F4EC0026A308 /* FeaturedTabView.swift */,
 			);
 			path = Home;
-			sourceTree = "<group>";
-		};
-		BD0F54CB2A30796300478D3A /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		BD0F54CC2A30796C00478D3A /* Extension */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extension;
 			sourceTree = "<group>";
 		};
 		BD0F54CD2A30797900478D3A /* Utility */ = {
@@ -231,12 +243,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F6DFAE2A30F1870026A308 /* CodableBundleExtension.swift in Sources */,
 				BD0F54B22A30757500478D3A /* ContentView.swift in Sources */,
 				BD0F54D62A30AB3400478D3A /* LogoView.swift in Sources */,
 				BD0F54D12A307A9600478D3A /* FooterView.swift in Sources */,
+				74F6DFB02A30F3E80026A308 /* FeaturedItemView.swift in Sources */,
 				BD0F54B02A30757500478D3A /* TouchdownApp.swift in Sources */,
 				BD0F54CF2A3079CC00478D3A /* Constant.swift in Sources */,
 				BD0F54D42A30A99800478D3A /* NavigationBarView.swift in Sources */,
+				74F6DFB22A30F4EC0026A308 /* FeaturedTabView.swift in Sources */,
+				74F6DFAB2A30F0E10026A308 /* PlayerModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +389,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -402,6 +419,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

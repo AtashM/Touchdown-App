@@ -28,10 +28,17 @@ struct ContentView: View {
                     .background(Color.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 5)
                 
-                Spacer()
+                ScrollView(.vertical, showsIndicators: false, content: {
+                    VStack(spacing: 0) {
+                        FeaturedTabView()
+                            .padding(.vertical, 20)
+                            .frame(height: 300)
+                        
+                        FooterView()
+                            .padding(.horizontal)
+                    }//: VSTACK
+                })//: SCROLL
                 
-                FooterView()
-                    .padding(.horizontal)
             }//: VSTACK
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }//: ZSTACK
